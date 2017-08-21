@@ -97,6 +97,8 @@ var stringifyJSON = function(obj) {
 
 
 };
+
+/*
 console.log(stringifyJSON(9));
 console.log(stringifyJSON(null));
 console.log(stringifyJSON(true));
@@ -123,7 +125,6 @@ console.log(stringifyJSON({}));
 console.log(stringifyJSON({'a': 'apple'}));
 console.log(stringifyJSON({'foo': true, 'bar': false, 'baz': null}));
 console.log(stringifyJSON({'boolean, true': true, 'boolean, false': false, 'null': null }));
-// basic nesting
 console.log(stringifyJSON({'a': {'b': 'c'}}));
 console.log(stringifyJSON({'a': ['b', 'c']}));
 console.log(stringifyJSON([{'a': 'b'}, {'c': 'd'}]));
@@ -146,3 +147,5 @@ console.log(typeof stringifyJSON({'a': {'b': 'c'}}));
 console.log(typeof stringifyJSON({'a': ['b', 'c']}));
 console.log(typeof stringifyJSON([{'a': 'b'}, {'c': 'd'}]));
 console.log(typeof stringifyJSON({'a': [], 'c': {}, 'b': true}));
+
+*/

@@ -10,7 +10,7 @@ var parseJSON = function(json) {
   // 'null' -- null
   var parseValue = function(char) {
 
-    };
+  };
 
   // '"' -- Start a string
   var parseString = function(char) {
