@@ -2,6 +2,7 @@
 // var stringifyJSON = JSON.stringify;
 
 // but you don't so you're going to write it from scratch:
+
 /*
 var stringifiableObjects = [
   9,

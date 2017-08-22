@@ -6,6 +6,7 @@
 // But instead we're going to implement it from scratch:
 
 
+
 var getElementsByClassName = function(className) {
   if (this === window) {
     return getElementsByClassName.call(document.body, className);
