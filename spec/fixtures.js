@@ -30,14 +30,14 @@ var stringifiableObjects = [
 // used for stringifyJSON spec
 // hint: JSON does not allow you to stringify functions or
 // undefined values, so you should skip those key/value pairs.
-unstringifiableValues = [
+var unstringifiableValues = [
   {
     'functions': function() {},
     'undefined': undefined
   }
 ];
 
-parseableStrings = [
+var parseableStrings = [
   // basic stuff
   '[]',
   '{"foo": ""}',
@@ -123,7 +123,7 @@ parseableStrings = [
 ];
 
 // JSON does not allow you to parse these strings
-unparseableStrings = [
+var unparseableStrings = [
   '["foo", "bar"',
   '["foo", "bar\\"]'
 ];
