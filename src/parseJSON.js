@@ -8,13 +8,13 @@ var parseJSON = function(json) {
   var index = 0;
   var char = function() {
     return json[index];
-  }
+  };
   var nonWhiteSpace = function() {
     while (json[index] === ' ') {
       index++;
     }
     return char();
-  }
+  };
   // 'true' -- true
   // 'false' -- false
   // 'null' -- null
@@ -64,7 +64,7 @@ var parseJSON = function(json) {
     // number or -
     // when does it end: when it's anything but a period, number or hyphen
     let num = '';
-    while (!isNaN(+char()) || char() === '.'|| char() === '-')  {
+    while (!isNaN(+ char()) || char() === '.'|| char() === '-') {
       num += char();
       index++;
     }
@@ -87,7 +87,7 @@ var parseJSON = function(json) {
       }
       arr.push(parseValue());
       nonWhiteSpace();
-      }
+    }
     index++;
     nonWhiteSpace();
     return arr;
@@ -120,13 +120,14 @@ var parseJSON = function(json) {
       Object.assign(objPair, parsePair());
       nonWhiteSpace();
 
-      if(char() === ',') {
+      if (char() === ',') {
         index++;
         nonWhiteSpace();
       }
-          }
+    }
     return objPair;
-  }
+  };
+
   var parsePair = function() {
     // invoke parseString on key
     // {"key": value}
@@ -142,7 +143,7 @@ var parseJSON = function(json) {
   };
 
 
-return parseValue();
+  return parseValue();
 };
 // Here is Jonathan's comment!
 console.log(parseJSON('null'));
